@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Internship Form</title>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="main-container">
+    
+    <!-- Left Design Panel -->
+    <div class="left-panel">
+      <h1>NeuroNexus</h1>
+      <p>Welcome to NeuroNexus, a forward-thinking company driven by innovation in AI and neuroscience. Join us in shaping the future through technology and research. Apply now and be part of something impactful.</p>
+    </div>
+    
+    <!-- Right Form Container -->
+    <div class="form-container">
+      <form>
+        <h2>Apply for Internship</h2>
+
+        <label for="fullname">Full Name <span class="required">*</span></label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="contact">Contact Number <span class="required">*</span></label>
+        <input type="tel" id="contact" name="contact" required />
+
+        <label for="address">Address <span class="required">*</span></label>
+        <div class="address-fields">
+        <input type="text" id="street" name="street" placeholder="Street" required />
+        <input type="text" id="landmark" name="landmark" placeholder="Landmark" required />
+        </div>
+
+        <label for="company">Company Name <span class="required">*</span></label>
+        <input type="text" id="company" name="company" required />
+
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="department">Department <span class="required">*</span></label>
+        <select id="department" name="department" required>
+          <option value="">--Select--</option>
+          <option value="HR">HR</option>
+          <option value="Sales">Sales</option>
+          <option value="Development">Development</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Others">Others</option>
+        </select>
+
+        <label>Gender <span class="required">*</span></label>
+        <div class="radio-group">
+          <label><input type="radio" name="gender" value="male" required /> Male</label>
+          <label><input type="radio" name="gender" value="female" /> Female</label>
+          <label><input type="radio" name="gender" value="prefer-not-to-say" /> Prefer not to say</label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

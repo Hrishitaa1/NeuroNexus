@@ -1,0 +1,180 @@
+/* Layout container */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .main-container {
+    display: flex;
+    height: 100vh;
+    background: linear-gradient(135deg, #f5d9ff, #c1d3ff);
+  }
+  
+  /* Left panel */
+  .left-panel {
+    flex: 1;
+    padding: 60px 40px;
+    color: white;
+    background: linear-gradient(to bottom right, #7b3fe4, #8e44ad);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 80px;
+  }
+  
+  .left-panel h1 {
+    font-size: 48px; /* Bigger size */
+    font-weight: 800; /* Extra bold */
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+  }
+  
+  .left-panel p {
+    font-size: 17px;
+    line-height: 1.7;
+    max-width: 420px;
+    text-align: justify;
+  }
+  
+  
+  /* Right form panel */
+  .form-container {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    overflow-y: auto;
+  }
+
+  /* Address fields container */
+.address-fields {
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Space between the two fields */
+  }
+  
+  /* Style for Street and Landmark inputs */
+  .address-fields input {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 13.5px;
+    background-color: #fefefe;
+    transition: border 0.3s ease;
+  }
+  
+  .address-fields input:focus {
+    border-color: #7b3fe4;
+  }
+  
+  .address-fields input::placeholder {
+    color: #aaa;
+  }
+  
+  .address-fields input:focus::placeholder {
+    color: transparent; /* Hide placeholder text on focus */
+  }
+  
+  
+  form {
+    width: 100%;
+    max-width: 380px;
+  }
+  
+  /* Form elements */
+  form h2 {
+    text-align: center;
+    color: #4b0082;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin: 12px 0 5px;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  input[type="text"],
+  input[type="tel"],
+  input[type="email"],
+  select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 13.5px;
+    background-color: #fefefe;
+    transition: border 0.3s ease;
+  }
+  
+  input:focus,
+  select:focus {
+    border-color: #7b3fe4;
+  }
+  
+  .radio-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .radio-group label {
+    font-weight: normal;
+    font-size: 14px;
+  }
+  
+  button[type="submit"] {
+    width: 100%;
+    background: linear-gradient(to right, #7b3fe4, #9b59b6);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 8px;
+  }
+  
+  button[type="submit"]:hover {
+    background: linear-gradient(to right, #5e35b1, #8e44ad);
+    transform: scale(1.02);
+  }
+  
+  .required {
+    color: red;
+    font-weight: bold;
+  }
+  
+  /* Responsive for smaller screens */
+  @media (max-width: 768px) {
+    .main-container {
+      flex-direction: column;
+    }
+  
+    .left-panel, .form-container {
+      flex: none;
+      width: 100%;
+      height: auto;
+    }
+  
+    .left-panel {
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  
+  
